@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>FlaskBlog</title>
+    <title>System Information</title>
 </head>
 <body>
-   <h1>Welcome to FlaskBlog</h1>
+    <h1>System Information</h1>
+    <p><strong>CPU Usage:</strong> {{ system_info['CPU Usage'] }}</p>
+    <p><strong>Memory Usage:</strong> {{ system_info['Memory Usage'] }}</p>
+
+    <h1>MySQL Database Connection</h1>
+    <p>{{ mysql_connection_status }}</p>
 </body>
 </html>
